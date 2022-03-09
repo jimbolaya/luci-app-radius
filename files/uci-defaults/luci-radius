@@ -1,0 +1,10 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+    delete ucitrack.@radius[-1]
+    add ucitrack radius
+    set ucitrack.@radius[-1].exec="/usr/lib/radius.sh rebuild"
+    commit ucitrack
+EOF
+
+/usr/lib/radius.sh rebuild
