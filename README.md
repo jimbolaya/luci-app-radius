@@ -4,9 +4,9 @@ Enterprise-class protection your WiFi security.
 
 This is based on the original app from Jason Tse <jasontsecode@gmail.com>
 
-I have updated what I can for Freeradius 3. Unlike the original app, this does not create a basic configuration for you. You will want to go through the OpenWRT wiki on Freeradius3 at https://openwrt.org/docs/guide-user/network/wifi/freeradius
+I have updated what I can for Freeradius 3. Unlike the original app, this does not create a basic configuration for you. You will want to go through the OpenWRT wiki on Freeradius3 at https://openwrt.org/docs/guide-user/network/wifi/freeradius to configure Freeradius 3 first.
 
-You will also need to install luci-compat
+You will also need to install luci-compat if you're running v21+ (maybe v19+)
 
 When you're done with that and have sucessfully tested connecting a WiFi client, you will want to add 
 
